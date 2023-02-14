@@ -6,10 +6,30 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 232080
+  numberOfFiles: 1
+  numberOfSubjects: 1
   schemaKey: AssetsSummary
-citation: Li, Chenyang (2023) test (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000411/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectricalSeries
+  - ElectrodeGroup
+citation: Li, Chenyang (2023) test (Version draft) [Data set]. DANDI archive. https://doi.org/10.80507/dandi.123456/0.123456.1234
 contributor:
 - affiliation: []
   email: cyli@ion.ac.cn
@@ -19,8 +39,10 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 dateCreated: '2023-02-14T07:47:55.546111+00:00'
+datePublished: '2023-02-14T08:55:12.899111+00:00'
 description: It is a test to use DANDI archive, like hello world. I will not upload
   any neural data in this set.
+doi: 10.80507/dandi.123456/0.123456.1234
 id: DANDI:000411/draft
 identifier: DANDI:000411
 license:
@@ -28,6 +50,18 @@ license:
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/000411/versions/draft/assets/
 name: test
+publishedBy:
+  endDate: '2023-02-14T08:55:12.899111+00:00'
+  id: urn:uuid:806ab6a6-9c0e-4fcd-8349-4e3720e01551
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2023-02-14T08:55:12.899111+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:00524c77-706e-4ad2-a936-98185fcfcd49
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.3
